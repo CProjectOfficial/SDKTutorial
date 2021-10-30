@@ -1,7 +1,7 @@
 <h1> Overview </h1>
 <h3> After purchasing your design and its completion, make sure you download the required SDK files and add them into your project accordingly.</h3>
 
-```
+```c++
 #include "CProjectSDK.hpp"
 
 void ImGuiInitialize()
