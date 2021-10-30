@@ -10,7 +10,7 @@ void ImGuiInitialize()
   
   ImGui::CreateContext( );
   
-  // CProject::Initialize( CProjectDxImage DxImage, CProjectDXDevice DxDevice, bool ShouldLoadImage, bool ShouldLoadFont )
+  // CProject::Initialize( CProjectDXImage DxImage, CProjectDXDevice DxDevice, bool ShouldLoadImage, bool ShouldLoadFont )
   
   // @ Param: DxImage        | This should be left NULL if you're NOT loading an image.
   // @ Param: DxDevice       | This should be left NULL if you're NOT loading an image.
