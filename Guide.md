@@ -11,10 +11,18 @@ void ImGuiInitialize()
   ImGui::CreateContext( );
   
   // CProject::Initialize( CProjectDxImage DxImage, CProjectDXDevice DxDevice, bool ShouldLoadImage, bool ShouldLoadFont )
-  //
-  // * If you don't want to load an image set DxImage and ShouldLoadImage to NULL ( 0 )
-  // * DxDevice parameter is REQUIRED if you are loading an image.
-  // * ShouldLoadFont should be set to TRUE. If not, you will be set with the default IMGUI font.
+  
+  // @ Param: DxImage        | This should be left NULL if you're NOT loading an image.
+  // @ Param: DxDevice       | This should be left NULL if you're NOT loading an image.
+  // @ Param: ShoudLoadImage | This should be left NULL if you're NOT loading an image
+  // @ Param: ShouldLoadFont | This should NOT be NULL. Unless you prefer the ImGui font.
+  
+  /*
+     - Notes:
+     
+        If you're using DirectX 11, please goto "CProjectSDK.hpp" and 
+        set "CPROJECT_USING_DX11" to "TRUE" an "CPROJECT_USING_DX9" to FALSE.    
+  */
   
   CProject::SDK( )->Initialize( 0, 0, 0, true );
 }
