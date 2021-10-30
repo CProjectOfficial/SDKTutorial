@@ -21,7 +21,7 @@ void ImGuiInitialize()
      - Notes:
      
         If you're using DirectX 11, please goto "CProjectSDK.hpp" and 
-        set "CPROJECT_USING_DX11" to "TRUE" an "CPROJECT_USING_DX9" to FALSE.    
+        set "CPROJECT_USING_DX11" to TRUE and "CPROJECT_USING_DX9" to FALSE.    
   */
   
   CProject::SDK( )->Initialize( 0, 0, 0, true );
